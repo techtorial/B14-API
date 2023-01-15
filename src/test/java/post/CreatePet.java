@@ -19,7 +19,7 @@ public class CreatePet {
         Response response = RestAssured.given()
                 .accept(ContentType.JSON)
                 .contentType(ContentType.JSON)
-                .body(PayloadUtils.getPetPayload("98123", "pet name", "poor"))
+                .body(PayloadUtils.getPetPayload("9018576759873534", "pet name", "poor"))
                 .when().post()
                 .then().contentType(ContentType.JSON)
                 .statusCode(200).log().all().extract().response();

@@ -42,8 +42,20 @@ public class CreatePet {
                 .when().post()
                 .then().statusCode(200)
                 .log().all().extract().response();
-
-
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
